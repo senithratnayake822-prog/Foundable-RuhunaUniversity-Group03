@@ -1,0 +1,123 @@
+/* ============================================
+   REPORT FOUND ITEM PAGE (heading + form)
+   Navbar and footer styles come from nav-footer.css
+   ============================================ */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  background: #fdfdfd;
+  color: #3a3a3a;
+}
+
+/* ---------- Page wrapper ---------- */
+.report-page {
+  padding: 150px 20px 280px;   /* space under navbar / above footer */
+}
+
+/* ---------- Heading ---------- */
+.report-heading {
+  text-align: center;
+}
+.report-heading h1 {
+  margin: 0;
+  font-size: 44px;
+  font-weight: 600;
+}
+.report-heading i {
+  display: block;
+  margin-top: 56px;
+  font-size: 44px;
+  color: #3f4a5e;
+}
+
+/* ---------- Form ---------- */
+.report-form {
+  max-width: 812px;
+  margin: 90px auto 0;
+}
+
+.form-group { margin-bottom: 36px; }
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #333;
+}
+
+.form-group input {
+  width: 100%;
+  height: 57px;
+  padding: 0 16px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 17px;
+  color: #333;
+}
+.form-group input::placeholder { color: #555; opacity: 1; }
+.form-group input:focus {
+  outline: none;
+  border-color: var(--orange-btn);
+}
+
+/* ---------- Attach image button ---------- */
+.attach-wrap {
+  text-align: center;
+  margin: -4px 0 32px;
+}
+.attach-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  width: 386px;
+  height: 60px;
+  border: 1px solid #ff3b4a;
+  border-radius: 8px;
+  background: #fff;
+  color: #ff3b4a;
+  font-size: 18px;
+  cursor: pointer;
+}
+.attach-btn:hover { background: #fff5f5; }
+.attach-wrap input[type="file"] { display: none; }
+
+/* ---------- Cancel / Next buttons ---------- */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  width: 173px;
+  height: 57px;
+  border-radius: 8px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 55px;
+  cursor: pointer;
+}
+.btn-cancel {
+  background: #fff;
+  border: 1px solid var(--orange-btn);
+  color: var(--orange-btn);
+}
+.btn-next {
+  background: var(--orange-btn);
+  border: 1px solid var(--orange-btn);
+  color: #fff;
+}
+.btn:hover { opacity: 0.9; }
+
+/* ---------- Small screens ---------- */
+@media (max-width: 700px) {
+  .report-heading h1 { font-size: 30px; }
+  .attach-btn { width: 100%; }
+}
