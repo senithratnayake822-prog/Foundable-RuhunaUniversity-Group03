@@ -1,0 +1,124 @@
+/* ============================================
+   CONTACT PAGE (heading + form)
+   Navbar and footer styles come from nav-footer.css
+   ============================================ */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  background: #fdfdfd;
+  color: #3a3a3a;
+}
+
+.footer { margin-top: 90px; }   /* closer gap between form and footer */
+
+/* ---------- Page wrapper ---------- */
+.contact-page {
+  padding: 200px 20px 0;
+}
+
+/* ---------- Heading ---------- */
+.contact-heading {
+  text-align: center;
+}
+.contact-heading h1 {
+  margin: 0 0 16px;
+  font-size: 44px;
+  font-weight: 600;
+}
+.contact-heading p {
+  max-width: 450px;
+  margin: 0 auto;
+  font-size: 18px;
+  line-height: 1.5;
+  color: #7d8294;
+}
+
+/* ---------- Form ---------- */
+.contact-form {
+  max-width: 645px;
+  margin: 70px auto 0;
+}
+
+.form-row {
+  display: flex;
+  gap: 28px;
+  margin-bottom: 18px;
+}
+.form-row .form-group { flex: 1; }
+
+.form-group label {
+  display: block;
+  margin-bottom: 10px;
+  font-size: 15px;
+  font-weight: 500;
+  color: #1a2233;
+}
+
+/* input with an icon inside */
+.input-icon { position: relative; }
+.input-icon i {
+  position: absolute;
+  left: 13px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 15px;
+  color: #1a2233;
+}
+.input-icon input { padding-left: 42px; }
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #cfd6e4;
+  border-radius: 8px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  color: #333;
+}
+.form-group input {
+  height: 51px;
+  padding: 0 40px;
+}
+.form-group textarea {
+  height: 148px;
+  padding: 14px 13px;
+  resize: vertical;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #4a5368;
+  opacity: 1;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--orange-btn);
+}
+
+/* ---------- Submit button ---------- */
+.submit-btn {
+  margin-top: 28px;
+  width: 134px;
+  height: 46px;
+  background: #e57d41;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  cursor: pointer;
+}
+.submit-btn i { margin-left: 6px; font-size: 14px; }
+.submit-btn:hover { opacity: 0.9; }
+
+/* ---------- Small screens ---------- */
+@media (max-width: 700px) {
+  .contact-page { padding-top: 120px; }
+  .contact-heading h1 { font-size: 32px; }
+  .form-row { flex-direction: column; gap: 18px; }
+}
