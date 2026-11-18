@@ -1,0 +1,114 @@
+/* ============================================
+   CLAIM ITEM PAGE (heading + form)
+   Navbar and footer styles come from nav-footer.css
+   ============================================ */
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  font-family: 'Manrope', sans-serif;
+  background: #fdfdfd;
+  color: #3a3a3a;
+}
+
+/* ---------- Page wrapper ---------- */
+.claim-page {
+  padding: 150px 20px 390px;   /* space under navbar / above footer */
+}
+
+/* ---------- Heading ---------- */
+.claim-heading {
+  text-align: center;
+}
+.claim-heading h1 {
+  margin: 0;
+  font-size: 44px;
+  font-weight: 600;
+}
+.claim-heading i {
+  display: block;
+  margin-top: 32px;
+  font-size: 44px;
+  color: #3f4a5e;
+}
+
+/* ---------- Form ---------- */
+.claim-form {
+  max-width: 812px;
+  margin: 70px auto 0;
+}
+
+.form-group { margin-bottom: 36px; }
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-size: 13px;
+  font-weight: 600;
+  color: #444;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 17px;
+  color: #333;
+}
+.form-group input {
+  height: 57px;
+  padding: 0 16px;
+}
+.form-group textarea {
+  height: 81px;
+  padding: 14px 16px;
+  line-height: 1.5;
+  resize: vertical;
+}
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+  color: #555;
+  opacity: 1;
+}
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--orange-btn);
+}
+
+/* ---------- Cancel / Next buttons ---------- */
+.form-actions {
+  display: flex;
+  justify-content: space-between;
+}
+.btn {
+  width: 173px;
+  height: 57px;
+  border-radius: 8px;
+  font-family: 'Manrope', sans-serif;
+  font-size: 18px;
+  text-align: center;
+  text-decoration: none;
+  line-height: 55px;
+  cursor: pointer;
+}
+.btn-cancel {
+  background: #fff;
+  border: 1px solid var(--orange-btn);
+  color: var(--orange-btn);
+}
+.btn-next {
+  background: var(--orange-btn);
+  border: 1px solid var(--orange-btn);
+  color: #fff;
+}
+.btn:hover { opacity: 0.9; }
+
+/* ---------- Small screens ---------- */
+@media (max-width: 700px) {
+  .claim-heading h1 { font-size: 30px; }
+}
